@@ -1,0 +1,112 @@
+section{
+	position:absolute;
+	width:1300px;
+	top:670px;
+	left:0px;
+}
+article{
+	position:relative;
+	height:200px;
+	width:1300px;
+}
+article img{
+	width:300px;
+	height:300px;
+}
+.tituloArticle{
+	position: absolute;
+	margin-top:5px;
+	margin-left:40px;
+	color:white;
+	font-size:38pt;
+	font-family:Bodoni MT;
+}
+.conteudoArticle{
+	position: absolute;
+	margin-top:30px;
+	margin-left:40px;
+	color:white;
+	font-size:20pt;
+	font-family:Bodoni MT;
+}
+.tituloArticle2{
+	position: absolute;
+	margin-top:5px;
+	margin-left:900px;
+	color:white;
+	font-size:38pt;
+	font-family:Bodoni MT;
+}
+.conteudoArticle2{
+	position: absolute;
+	margin-top:30px;
+	margin-left:560px;
+	color:white;
+	font-size:20pt;
+	font-family:Bodoni MT;
+}
+.imagemArticle2 img{
+	position: absolute;
+	top:-50px;
+}
+.imagemArticle img{
+	position: absolute;
+	left:900px;
+	top:-50px;
+}
+#articleDatabase{
+	left:-1300px;
+	transition:left 1.6s;
+	background:url("../imagens/backgroundArticleDatabase.png");
+}
+#articleDatabase:hover{
+	z-index:100;
+	-webkit-transform:scale(1.06);
+	transition:-webkit-transform 1s;
+
+}
+#articleDesign{
+	top:30px;
+	left:1300px;
+	transition:left 1.6s;
+	background:url("../imagens/backgroundArticleDesign.png");
+}
+#articleDesign:hover{
+	z-index:100;
+	-webkit-transform:scale(1.06);
+	transition:-webkit-transform 1s;
+
+}
+#articlePlanilhas{
+	top:60px;
+	left:-1300px;
+	transition:left 1.6s;
+	background:url("../imagens/backgroundArticleExcel.png");
+}
+#articlePlanilhas:hover{
+	z-index:100;
+	-webkit-transform:scale(1.06);
+	transition:-webkit-transform 1s;
+}
+#articleMobile{
+	top:83px;
+	left:1300px;
+	transition:left 1.6s;
+	background:url("../imagens/backgroundArticleMobile.png");
+}
+#articleMobile:hover{
+	z-index:100;
+	-webkit-transform:scale(1.06);
+	transition:-webkit-transform 1s;
+}
+#articleWeb{
+	top:110px;
+	left:-1300px;
+	transition:left 1.6s;
+	background:url("../imagens/backgroundArticleWeb.png");
+}
+#articleWeb:hover{
+	z-index:100;
+	-webkit-transform:scale(1.06);
+	transition:-webkit-transform 1s;
+}

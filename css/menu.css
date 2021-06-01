@@ -1,0 +1,21 @@
+.menu{
+	margin-top: 8px;
+	font-family:bodoni MT;
+	display: inline-block;
+	margin-left:190px;
+	opacity:0.6;
+}
+.menu:hover{
+	opacity:1;
+}
+#menu{
+	background:black;
+	z-index:100;
+	position:absolute;
+	top:0px;
+	left:0px;
+	color:white;
+	width:1300px;
+	height:50px;
+	font-size: 20pt;
+}
