@@ -1,0 +1,90 @@
+body{
+	padding-top: 100px;
+}
+article{
+	margin-top: 100px;
+}
+.imageTitleService{
+	width:300px;
+	height:300px;
+	margin-left:39.07%;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.blocoConteudo{
+	padding:16px;
+	position: relative;
+	display: inline-block;
+	border-radius:20%;
+	margin-left:8%;
+	width:260px;
+	height:300px;
+	background:black;
+	border:2px black solid;
+	margin-bottom: 0px;
+	cursor: default;
+}
+.blocoConteudo:hover{
+	z-index:100;
+	transition:-webkit-transform 1s,box-shadow 1s;
+	-webkit-transform:scale(1.02);
+	box-shadow: 10px 10px #737272;
+}
+.tituloService{
+	font-family:Century Gothic;
+	font-weight: bold;
+	color:black;
+	margin-left:18%;
+	font-size:27pt;
+}
+.conteudoService{
+	font-family: Arial;
+	font-weight: bold;
+	color:white;
+	font-size:12.6pt;
+}
+#blocoServiceResumoAndroid{
+	background:#3ddd85;
+}
+#blocoServiceBeneficiosAndroid{
+	background:#3ddd85;
+}
+#blocoServiceDiferenciaisAndroid{
+	background:#3ddd85;
+}
+#blocoServiceResumoDatabase{
+	background:linear-gradient(to bottom right,#2037a9,#5a95dc);
+}
+#blocoServiceBeneficiosDatabase{
+	background:linear-gradient(to top,#2037a9,#5a95dc);
+}
+#blocoServiceDiferenciaisDatabase{
+	background:linear-gradient(to bottom left,#2037a9,#5a95dc);
+}
+#blocoServiceResumoDesign{
+	background:linear-gradient(to bottom right,#e4062b,#d43a3a);
+}
+#blocoServiceBeneficiosDesign{
+	background:linear-gradient(to top,#e4062b,#d43a3a);
+}
+#blocoServiceDiferenciaisDesign{
+	background:linear-gradient(to bottom left,#e4062b,#d43a3a);
+}
+#blocoServiceResumoWeb{
+	background:linear-gradient(to bottom right,#4e4e4e,black);
+}
+#blocoServiceBeneficiosWeb{
+	background:linear-gradient(to top,black,#4e4e4e);
+}
+#blocoServiceDiferenciaisWeb{
+	background:linear-gradient(to bottom left,#4e4e4e,black);
+}
+#blocoServiceResumoPlanilhas{
+	background:linear-gradient(to bottom right,#37d751,#117e43);
+}
+#blocoServiceBeneficiosPlanilhas{
+	background:linear-gradient(to top,#37d751,#117e43);
+}
+#blocoServiceDiferenciaisPlanilhas{
+	background:linear-gradient(to bottom left,#37d751,#117e43);
+}

@@ -61,7 +61,8 @@ article img{
 }
 #articleDatabase:hover{
 	z-index:100;
-	-webkit-transform:scale(1.06);
+	-webkit-transform:scale(1.02);
+	cursor: default;
 	transition:-webkit-transform 1s;
 
 }
@@ -73,7 +74,8 @@ article img{
 }
 #articleDesign:hover{
 	z-index:100;
-	-webkit-transform:scale(1.06);
+	cursor: default;
+	-webkit-transform:scale(1.02);
 	transition:-webkit-transform 1s;
 
 }
@@ -85,7 +87,8 @@ article img{
 }
 #articlePlanilhas:hover{
 	z-index:100;
-	-webkit-transform:scale(1.06);
+	cursor: default;
+	-webkit-transform:scale(1.02);
 	transition:-webkit-transform 1s;
 }
 #articleMobile{
@@ -96,7 +99,8 @@ article img{
 }
 #articleMobile:hover{
 	z-index:100;
-	-webkit-transform:scale(1.06);
+	cursor: default;
+	-webkit-transform:scale(1.02);
 	transition:-webkit-transform 1s;
 }
 #articleWeb{
@@ -107,6 +111,7 @@ article img{
 }
 #articleWeb:hover{
 	z-index:100;
-	-webkit-transform:scale(1.06);
+	cursor: default;
+	-webkit-transform:scale(1.02);
 	transition:-webkit-transform 1s;
 }

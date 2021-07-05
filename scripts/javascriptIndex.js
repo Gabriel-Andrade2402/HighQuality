@@ -1,5 +1,7 @@
 function ScrollManipulation(){
 	window.addEventListener('scroll',function(ev){
+		var menu=document.getElementById('menu');
+		menu.style.position="absolute";
 		if (window.scrollY > 100){
 			let article=document.getElementById('articleDatabase');
     		article.style.left="0px";
@@ -10,7 +12,6 @@ function ScrollManipulation(){
     	}
     	if(window.scrollY>500){
     		let article=document.getElementById('articlePlanilhas');
-    		let menu=document.getElementById('menu');
     		menu.style.position="fixed";
     		article.style.left="0px";
     	}
@@ -23,7 +24,6 @@ function ScrollManipulation(){
     		article.style.left="0px";
     	}
     	if(window.scrollY<500){
-    		let menu=document.getElementById('menu');
     		menu.style.position="absolute";
     	}
 

@@ -2,16 +2,25 @@
 	margin-top: 8px;
 	font-family:bodoni MT;
 	display: inline-block;
-	margin-left:190px;
+	margin-left:150px;
 	opacity:0.6;
+	position: relative;
+}
+.menu img{
+	top: -35px;
+	left:-80px;
+	position:absolute;
+	height:60px;
 }
 .menu:hover{
 	opacity:1;
+	cursor:pointer;
 }
+/*Bloco preto*/
 #menu{
 	background:black;
-	z-index:100;
-	position:absolute;
+	z-index:10000;
+	position:fixed;
 	top:0px;
 	left:0px;
 	color:white;
