@@ -27,7 +27,7 @@ article{
 .blocoConteudo:hover{
 	z-index:100;
 	transition:-webkit-transform 1s,box-shadow 1s;
-	-webkit-transform:scale(1.02);
+	-webkit-transform:scale(1.06);
 	box-shadow: 10px 10px #737272;
 }
 .tituloService{
