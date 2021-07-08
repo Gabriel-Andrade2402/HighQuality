@@ -1,0 +1,17 @@
+article{height:700px;}
+#logomarcaSobre{
+	width:600px;
+	height:600px;
+	left:2%;
+	position:relative;
+	display: inline-block;
+}
+#textoSobre{
+	display:inline-block;
+	position: relative;
+	width:600px;
+	font-weight:500;
+	top:-200px;
+	font-family: Cambria Math;
+	font-size:20pt;
+}
