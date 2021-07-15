@@ -54,12 +54,12 @@ header{
 	height: 600px;
 	opacity:0.8;
 	background:url("../imagens/backgroundPreto.png");
-	border-bottom-right-radius:25%;
+	border-bottom-right-radius:37%;
 }
 @keyframes animationBackground{
-	20%{background:url("../imagens/backgroundDatabase.png");}
+	20%{background:url("../imagens/backgroundDesign.png");}
 	40%{background:url("../imagens/backgroundExcel.png");}
 	60%{background:url("../imagens/backgroundAndroid.png");}
-	80%{background:url("../imagens/backgroundDesign.png");}
+	80%{background:url("../imagens/backgroundDatabase.png");}
 	100%{background:url("../imagens/backgroundWeb.png");}
 }
