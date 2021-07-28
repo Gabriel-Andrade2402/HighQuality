@@ -1,3 +1,6 @@
+body{
+	background:#1C1C1C;
+}
 article{height:700px;}
 #logomarcaSobre{
 	width:600px;
@@ -10,6 +13,7 @@ article{height:700px;}
 	display:inline-block;
 	position: relative;
 	width:600px;
+	color:white;
 	font-weight:500;
 	top:-200px;
 	font-family: Cambria Math;
