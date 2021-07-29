@@ -4,7 +4,11 @@ body{
 	padding-left: 40px;
 }
 article{
-	padding: 0px;
+	padding:0px;
+	transition:width 1s, height 1s;
+}
+article:hover{
+	cursor:pointer;
 }
 .articleDesign{
 	width:200px;

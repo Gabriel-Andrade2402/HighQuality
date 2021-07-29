@@ -126,7 +126,6 @@ function ManipulacaoDeEventosCakesTreats(divPrincipal,ultimoElemento,imagens,div
 //Métodos auxiliar para passar e voltar  imagens manipulando a string com id "imagensCakesTreats-1"
 function passarFoto(imagens){
 	var resultadoSplit=imagens.id.split("-");
-	console.log(resultadoSplit[1]);
 	if(resultadoSplit[1]!=='11'){
 		var sum=parseInt(resultadoSplit[1])+1;
 		imagens.src="../imagens/imagensCakesTreats-"+sum+".png";
