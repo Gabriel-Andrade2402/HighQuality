@@ -1,23 +1,24 @@
 body{
-	background:#1C1C1C;
+	background:#ffff;
 	padding-top:100px;
 	padding-left: 40px;
 }
 article{
 	padding:0px;
-	transition:width 1s, height 1s;
+	transition:width 0.6s, height 0.6s;
 }
 article:hover{
 	cursor:pointer;
 }
 .articleDesign{
-	width:200px;
-	height:200px;
+	width:400px;
+	height:400px;
 	border-radius:30px;
 	display: inline-block;
-	margin-left:100px;
-	border:1px solid black;
-	box-shadow:-1px -1px 5px black;
+	margin-left:120px;
+	margin-bottom: 70px;
+	border:0.5px solid #00BFFF;
+	box-shadow:-1px -1px 5px #1C1C1C;
 }
 #articleChamativos{
 	background:linear-gradient(to left top,#e4e4e4,#1E90FF);
@@ -28,7 +29,11 @@ article:hover{
 #articleInformativos{
 	background:linear-gradient(to left bottom,#1E90FF,#e4e4e4);
 }
+#articleLogomarcas{
+	background:linear-gradient(to left,#1E90FF,#e4e4e4);
+}
 .iconesDesign{
+	display:block;
 	opacity:1;
 	position:relative;
 	width:100%;
@@ -45,4 +50,41 @@ article:hover{
 	font-family: arial,sans-serif;
 	color:white;
 	font-weight:bold;
+}
+
+.formatacaoDeImagens{
+	transition:filter 0.6s;
+	border-radius:10px;
+	display:inline-block;
+	filter: saturate(0%);
+	width:300px;
+	height:100%;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+.formatacaoBotaoRetrair{
+	width:60px;
+	height:60px;
+	position:relative ;
+	left:47%;
+	top:88%;
+	opacity:0.5;
+}
+.formatacaoFundoRetrair{
+	width:1000px;
+	height:60px;
+	position:absolute ;
+	top:550px;
+	opacity:0.5;
+	background:white ;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+
+}
+.formatacaoBlocoComImanges{
+	position:relative;
+	width:980px;
+	height:300px;
+	left:2%;
+	overflow:auto;
 }

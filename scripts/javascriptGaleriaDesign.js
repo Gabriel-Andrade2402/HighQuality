@@ -9,10 +9,10 @@ function CriandoTextoChamativos(){
 	if(eventoTexto==null){
 	eventoTexto=window.setInterval(function(){
 		var arrayTexto=span.innerText.split("");
-		span.style.fontSize ="20pt";
+		span.style.fontSize ="35pt";
 		span.style.position="relative";
-		span.style.left="6%";
-		span.style.top="35%";
+		span.style.left="25%";
+		span.style.top="80%";
 		if(arrayTexto.length==0){
 			span.innerText="C";
 		}
@@ -71,10 +71,10 @@ function CriandoTextoCardapios(){
 	if(eventoTexto==null){
 	eventoTexto=window.setInterval(function(){
 		var arrayTexto=span.innerText.split("");
-		span.style.fontSize ="20pt";
+		span.style.fontSize ="35pt";
 		span.style.position="relative";
-		span.style.left="9%";
-		span.style.top="35%";
+		span.style.left="25%";
+		span.style.top="80%";
 		if(arrayTexto.length==0){
 			span.innerText="C";
 		}
@@ -118,6 +118,7 @@ function cancelarCardapios(){
 }
 //-------------FIM EVENTOS "CARDAPIOS"
 
+
 //EVENTOS "INFORMATIVOS"
 function CriandoTextoInformativos(){
 	var icone=document.getElementById('iconeInformativos');
@@ -127,10 +128,10 @@ function CriandoTextoInformativos(){
 	if(eventoTexto==null){
 	eventoTexto=window.setInterval(function(){
 		var arrayTexto=span.innerText.split("");
-		span.style.fontSize ="17pt";
+		span.style.fontSize ="30pt";
 		span.style.position="relative";
-		span.style.left="9%";
-		span.style.top="35%";
+		span.style.left="25%";
+		span.style.top="80%";
 		if(arrayTexto.length==0){
 			span.innerText="I";
 		}
@@ -182,47 +183,97 @@ function cancelarInformativos(){
 	span.style.marginTop="0%";
 }
 //-------------FIM EVENTOS "INFORMATIVOS"
+
+
+//EVENTOS "LOGOMARCAS"
+function CriandoTextoLogomarcas(){
+	var icone=document.getElementById('iconeLogomarcas');
+	var div=document.getElementById('blocoTituloLogomarcas');
+	var span=div.children[0];
+	icone.style.opacity="0";
+	if(eventoTexto==null){
+	eventoTexto=window.setInterval(function(){
+		var arrayTexto=span.innerText.split("");
+		span.style.fontSize ="30pt";
+		span.style.position="relative";
+		span.style.left="25%";
+		span.style.top="80%";
+		if(arrayTexto.length==0){
+			span.innerText="L";
+		}
+		if(arrayTexto.length==1){
+			span.innerText+="O";
+		}if(arrayTexto.length==2){
+			span.innerText+="G";
+		}
+		if(arrayTexto.length==3){
+			span.innerText+="O";
+		}
+		if(arrayTexto.length==4){
+			span.innerText+="M";
+		}
+		if(arrayTexto.length==5){
+			span.innerText+="A";	
+		}
+		if(arrayTexto.length==6){
+			span.innerText+="R";
+		}
+		if(arrayTexto.length==7){
+			span.innerText+="C";
+		}
+		if(arrayTexto.length==8){
+			span.innerText+="A";
+		}
+		if(arrayTexto.length==9){
+			span.innerText+="S";
+			cancelandoTexto();
+		}
+	}, 120);
+	}
+}
+
+function cancelarLogomarcas(){
+	cancelandoTexto();
+	var div=document.getElementById('blocoTituloLogomarcas');
+	var icone=document.getElementById('iconeLogomarcas');
+	var span=div.children[0];
+	icone.style.opacity="1";
+	span.innerText="";
+	span.style.left="30%";
+	span.style.marginTop="0%";
+}
+//-------------FIM EVENTOS "LOGOMARCAS"
+
+
 //Evento universal
 function cancelandoTexto(){
 	window.clearInterval(eventoTexto);
 	eventoTexto=null;
 }
-function limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair){
+function limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens){
 	setTimeout(function(){
-		article.style.width="200px";
-		article.style.height="200px";
+		article.style.width="400px";
+		article.style.height="400px";
 		icone.style.display="block";
 		span.style.display="block";
 		article.removeChild(fundoRetrair);
 		article.removeChild(botaoRetrair);
+		article.removeChild(blocoComImagens);
 	},100);
 }
-//Eventos de cliques na galeria
-function cliqueChamativos(){
-	var icone=document.getElementById('iconeChamativo');
-	var div=document.getElementById('blocoTituloChamativo');
-	var article=document.getElementById('articleChamativos');
-	var span=div.children[0];
-	if(icone.style.display==="block" || icone.style.display===""){
-		//Criação do botao de retração do conteudo
-		var botaoRetrair=document.createElement('img');
-		var fundoRetrair=document.createElement('div');
-		fundoRetrair.style.background="white";
-		fundoRetrair.style.position="absolute";
-		fundoRetrair.style.width="1000px";
-		fundoRetrair.style.height="60px";
-		fundoRetrair.style.borderBottomLeftRadius="30px";
-		fundoRetrair.style.borderBottomRightRadius="30px";
-		fundoRetrair.style.top="550px";
-		fundoRetrair.style.opacity="0.5";
-		botaoRetrair.style.width="60px";
-		botaoRetrair.style.height="60px";
-		botaoRetrair.style.position="relative";
-		botaoRetrair.style.left="47%";
-		botaoRetrair.style.top="88%";
-		botaoRetrair.style.opacity="0.5";
-		botaoRetrair.src="../imagens/iconeSubir.png";
-		fundoRetrair.onmouseover = function(){
+function iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens){
+	blocoComImagens.classList="formatacaoBlocoComImanges";
+	arrayDeImagens.forEach(function(imagem){
+		imagem.classList.add('formatacaoDeImagens');
+		imagem.onmouseover=function(){imagem.style.filter="saturate(100%)"};
+		imagem.onmouseleave=function(){imagem.style.filter="saturate(0%)"};
+		blocoComImagens.appendChild(imagem);
+	});
+}
+function iniciaBotaoRetrair(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens){
+	fundoRetrair.classList="formatacaoFundoRetrair";
+	botaoRetrair.classList="formatacaoBotaoRetrair";
+	fundoRetrair.onmouseover = function(){
 			fundoRetrair.style.opacity="0.8";
 			botaoRetrair.style.opacity="0.8";
 		};
@@ -238,22 +289,58 @@ function cliqueChamativos(){
 			fundoRetrair.style.opacity="0.5";
 			botaoRetrair.style.opacity="0.5";
 		};
-		console.log('executouPrincipal');
+		fundoRetrair.addEventListener('click',function(){
+			limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens);
+		});
+		botaoRetrair.addEventListener('click',function(){
+			limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens);
+		});
+}
+//Eventos de cliques na galeria
+function cliqueChamativos(){
+	var icone=document.getElementById('iconeChamativo');
+	var div=document.getElementById('blocoTituloChamativo');
+	var article=document.getElementById('articleChamativos');
+	var span=div.children[0];
+	if(icone.style.display==="block" || icone.style.display===""){
+		//Criação do botao de retração do conteudo
+		var arrayDeImagens=[];
+		var blocoComImagens=document.createElement('div');
+		var botaoRetrair=document.createElement('img');
+		var fundoRetrair=document.createElement('div');
+		var imagem1=document.createElement('img');
+		var imagem2=document.createElement('img');
+		var imagem3=document.createElement('img');
+		var imagem4=document.createElement('img');
+		var imagem5=document.createElement('img');
+		var imagem6=document.createElement('img');
+		imagem1.src="../imagens/ovo.jpg";
+		imagem2.src="../imagens/Artes4-2.png";
+		imagem3.src="../imagens/McKevin1.png";
+		imagem4.src="../imagens/arteinstagramchamar1.png";
+		imagem5.src="../imagens/arte6.png";
+		imagem6.src="../imagens/ArtesInstagram3.png";
+		arrayDeImagens.push(imagem1);
+		arrayDeImagens.push(imagem2);
+		arrayDeImagens.push(imagem3);
+		arrayDeImagens.push(imagem4);
+		arrayDeImagens.push(imagem5);
+		arrayDeImagens.push(imagem6);
+		//Inicia bloco com imagens dentro do conteudo aberto
+		iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens);
+		//Inicia botao de retração de conteudo
+		botaoRetrair.src="../imagens/iconeEsquerda.png";
+		iniciaBotaoRetrair(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens);
 		//Fim da criação do botão de retração
 		article.style.width="1000px";
 		article.style.height="500px";
 		icone.style.display="none";
 		span.style.display="none";
-		fundoRetrair.addEventListener('click',function(){
-			limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair)
-		});
-		botaoRetrair.addEventListener('click',function(){
-			limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair);
-		});
 		setTimeout(function(){
 			article.appendChild(fundoRetrair);	
-			article.appendChild(botaoRetrair);	
-		},1000);
+			article.appendChild(botaoRetrair);
+			article.appendChild(blocoComImagens);
+		},450);
 		
 	}
 }

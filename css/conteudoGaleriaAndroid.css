@@ -1,5 +1,5 @@
 body{
-	background:#1e1e1e;
+	background:#ffff;
 	margin:0px;
 	padding:0px;
 	padding-top:10%;
@@ -12,10 +12,10 @@ body{
 	height:200px;
 	border-radius:50px;
 	background:#e5e9e5;
-	box-shadow:1px 1px 5px black;
+	box-shadow:1px 1px 10px black;
 	transition:height 0.4s;
 	margin-bottom: 0px;
-	border: black 2px solid;
+	border: black 1px solid;
 }
 #blocoConteudoCakesTreats{
 	background:linear-gradient(to right,#ffffff,#fbe79e);
