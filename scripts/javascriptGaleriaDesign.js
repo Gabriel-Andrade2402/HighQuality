@@ -64,8 +64,8 @@ function cancelarChamativos(){
 
 //EVENTOS "CARDAPIOS"
 function CriandoTextoCardapios(){
-	var icone=document.getElementById('iconeCardapio');
-	var div=document.getElementById('blocoTituloCardapio');
+	var icone=document.getElementById('iconeCardapios');
+	var div=document.getElementById('blocoTituloCardapios');
 	var span=div.children[0];
 	icone.style.opacity="0";
 	if(eventoTexto==null){
@@ -108,8 +108,8 @@ function CriandoTextoCardapios(){
 
 function cancelarCardapios(){
 	cancelandoTexto();
-	var div=document.getElementById('blocoTituloCardapio');
-	var icone=document.getElementById('iconeCardapio');
+	var div=document.getElementById('blocoTituloCardapios');
+	var icone=document.getElementById('iconeCardapios');
 	var span=div.children[0];
 	icone.style.opacity="1";
 	span.innerText="";
@@ -250,7 +250,7 @@ function cancelandoTexto(){
 	window.clearInterval(eventoTexto);
 	eventoTexto=null;
 }
-function limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens){
+function limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens,valorScrollY){
 	setTimeout(function(){
 		article.style.width="400px";
 		article.style.height="400px";
@@ -259,10 +259,13 @@ function limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoCo
 		article.removeChild(fundoRetrair);
 		article.removeChild(botaoRetrair);
 		article.removeChild(blocoComImagens);
+		document.documentElement.scrollTop = valorScrollY;
 	},100);
 }
-function iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens){
+function iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens,width,height){
 	blocoComImagens.classList="formatacaoBlocoComImanges";
+	blocoComImagens.style.width=width;
+	blocoComImagens.style.height=height;
 	arrayDeImagens.forEach(function(imagem){
 		imagem.classList.add('formatacaoDeImagens');
 		imagem.onmouseover=function(){imagem.style.filter="saturate(100%)"};
@@ -270,7 +273,7 @@ function iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens){
 		blocoComImagens.appendChild(imagem);
 	});
 }
-function iniciaBotaoRetrair(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens){
+function iniciaBotaoRetrair(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens,valorScrollY){
 	fundoRetrair.classList="formatacaoFundoRetrair";
 	botaoRetrair.classList="formatacaoBotaoRetrair";
 	fundoRetrair.onmouseover = function(){
@@ -290,12 +293,14 @@ function iniciaBotaoRetrair(icone,div,article,span,fundoRetrair,botaoRetrair,blo
 			botaoRetrair.style.opacity="0.5";
 		};
 		fundoRetrair.addEventListener('click',function(){
-			limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens);
+			limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens,valorScrollY);
 		});
 		botaoRetrair.addEventListener('click',function(){
-			limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens);
+			limparConteudo(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens,valorScrollY);
 		});
 }
+
+
 //Eventos de cliques na galeria
 function cliqueChamativos(){
 	var icone=document.getElementById('iconeChamativo');
@@ -327,7 +332,7 @@ function cliqueChamativos(){
 		arrayDeImagens.push(imagem5);
 		arrayDeImagens.push(imagem6);
 		//Inicia bloco com imagens dentro do conteudo aberto
-		iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens);
+		iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens,"980px","300px");
 		//Inicia botao de retração de conteudo
 		botaoRetrair.src="../imagens/iconeEsquerda.png";
 		iniciaBotaoRetrair(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens);
@@ -341,8 +346,122 @@ function cliqueChamativos(){
 			article.appendChild(botaoRetrair);
 			article.appendChild(blocoComImagens);
 		},450);
+	}
+}
+function cliqueCardapios(){
+	var icone=document.getElementById('iconeCardapios');
+	var div=document.getElementById('blocoTituloCardapios');
+	var article=document.getElementById('articleCardapios');
+	var span=div.children[0];
+	if(icone.style.display==="block" || icone.style.display===""){
+		//Criação do botao de retração do conteudo
+		var arrayDeImagens=[];
+		var blocoComImagens=document.createElement('div');
+		var botaoRetrair=document.createElement('img');
+		var fundoRetrair=document.createElement('div');
+		var imagem1=document.createElement('img');
+		var imagem2=document.createElement('img');
+		var imagem3=document.createElement('img');
+		var imagem4=document.createElement('img');
+		var imagem5=document.createElement('img');
+		var imagem6=document.createElement('img');
+		imagem1.src="../imagens/cardapioAltoastralFrente.png";
+		imagem2.src="../imagens/cardapioAltoastralTras.png";
+		imagem3.src="../imagens/cardapioCakesTreatsFrente.png";
+		imagem4.src="../imagens/cardapioCakesTreatsTras.png";
+		imagem5.src="../imagens/cardapioJhowFrente.png";
+		imagem6.src="../imagens/cardapioJhowTras.png";
+		arrayDeImagens.push(imagem1);
+		arrayDeImagens.push(imagem2);
+		arrayDeImagens.push(imagem3);
+		arrayDeImagens.push(imagem4);
+		arrayDeImagens.push(imagem5);
+		arrayDeImagens.push(imagem6);
+		//Inicia bloco com imagens dentro do conteudo aberto
+		iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens,"980px","350px");
+		//Inicia botao de retração de conteudo
+		botaoRetrair.src="../imagens/iconeEsquerda.png";
+		iniciaBotaoRetrair(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens,0);
+		//Fim da criação do botão de retração
+		article.style.width="1000px";
+		article.style.height="500px";
+		icone.style.display="none";
+		span.style.display="none";
+		setTimeout(function(){
+			article.appendChild(fundoRetrair);	
+			article.appendChild(botaoRetrair);
+			article.appendChild(blocoComImagens);
+			document.documentElement.scrollTop = 520;
+		},450);
 		
 	}
 }
-function cliqueCardapios(){}
-function cliqueInformativos(){}
+
+function cliqueInformativos(){
+	var icone=document.getElementById('iconeInformativos');
+	var div=document.getElementById('blocoTituloInformativos');
+	var article=document.getElementById('articleInformativos');
+	var span=div.children[0];
+	if(icone.style.display==="block" || icone.style.display===""){
+		//Criação do botao de retração do conteudo
+		var arrayDeImagens=[];
+		var blocoComImagens=document.createElement('div');
+		var botaoRetrair=document.createElement('img');
+		var fundoRetrair=document.createElement('div');
+		var imagem1=document.createElement('img');
+		var imagem2=document.createElement('img');
+		imagem1.src="../imagens/McKevin1.png";
+		imagem2.src="../imagens/arteinstagramchamar1.png";
+		arrayDeImagens.push(imagem1);
+		arrayDeImagens.push(imagem2);
+		//Inicia bloco com imagens dentro do conteudo aberto
+		iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens,"980px","300px");
+		//Inicia botao de retração de conteudo
+		botaoRetrair.src="../imagens/iconeEsquerda.png";
+		iniciaBotaoRetrair(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens,600);
+		//Fim da criação do botão de retração
+		article.style.width="1000px";
+		article.style.height="500px";
+		icone.style.display="none";
+		span.style.display="none";
+		setTimeout(function(){
+			article.appendChild(fundoRetrair);	
+			article.appendChild(botaoRetrair);
+			article.appendChild(blocoComImagens);
+			document.documentElement.scrollTop = 500;
+		},450);
+		
+	}
+}
+function cliqueLogomarcas(){
+	var icone=document.getElementById('iconeLogomarcas');
+	var div=document.getElementById('blocoTituloLogomarcas');
+	var article=document.getElementById('articleLogomarcas');
+	var span=div.children[0];
+	if(icone.style.display==="block" || icone.style.display===""){
+		//Criação do botao de retração do conteudo
+		var arrayDeImagens=[];
+		var blocoComImagens=document.createElement('div');
+		var botaoRetrair=document.createElement('img');
+		var fundoRetrair=document.createElement('div');
+		var imagem1=document.createElement('img');
+		imagem1.src="../imagens/iconeLogomarcas.png";
+		arrayDeImagens.push(imagem1);
+		//Inicia bloco com imagens dentro do conteudo aberto
+		iniciaImagensEAdiciona(blocoComImagens,arrayDeImagens,"980px","300px");
+		//Inicia botao de retração de conteudo
+		botaoRetrair.src="../imagens/iconeEsquerda.png";
+		iniciaBotaoRetrair(icone,div,article,span,fundoRetrair,botaoRetrair,blocoComImagens,500);
+		//Fim da criação do botão de retração
+		article.style.width="1000px";
+		article.style.height="500px";
+		icone.style.display="none";
+		span.style.display="none";
+		setTimeout(function(){
+			article.appendChild(fundoRetrair);	
+			article.appendChild(botaoRetrair);
+			article.appendChild(blocoComImagens);
+			document.documentElement.scrollTop = 1000;
+		},450);
+	}
+}
