@@ -2,11 +2,11 @@ function ScrollManipulation(){
 	window.addEventListener('scroll',function(ev){
 		var menu=document.getElementById('menu');
 		menu.style.position="absolute";
-		if (window.scrollY > 100){
+		if (window.scrollY > 50){
 			let article=document.getElementById('articleDatabase');
     		article.style.left="0px";
     	}
-    	if(window.scrollY>300){
+    	if(window.scrollY>200){
     		let article=document.getElementById('articleDesign');
     		article.style.left="0px";
     	}
@@ -19,7 +19,7 @@ function ScrollManipulation(){
     		let article=document.getElementById('articleMobile');
     		article.style.left="0px";
     	}
-    	if(window.scrollY>1050){
+    	if(window.scrollY>1000){
     		let article=document.getElementById('articleWeb');
     		article.style.left="0px";
     	}

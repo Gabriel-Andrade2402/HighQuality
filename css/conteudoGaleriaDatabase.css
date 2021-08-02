@@ -1,0 +1,46 @@
+body{
+	padding-top:100px;
+	padding-left:50px;
+}
+.articleDatabases{
+	display:inline-block;
+	width:300px;
+	height:60px;
+	margin-left:13%;
+	margin-bottom:6%;
+	background:#00BFFF;
+	border:1px solid #696969;
+	text-shadow: 1px 1px 4px black;
+	border-radius:10px;
+	font-family: arial;
+	font-weight:bold;
+	color:white;
+	padding-top:30px;
+	padding-left:50px;
+	font-size:20pt;
+	transition:background 0.3s,color 0.3s,text-shadow 0.3s,width 0.6s,heigth 0.6s;
+}
+.articleDatabases:hover{
+	background: #20B2AA;
+	color:#1C1C1C;
+	text-shadow: 1px 1px 1px black;
+	cursor:pointer;
+}
+#articleDatabaseSimples{
+	
+}
+#articleDatabaseAutomatizado{
+	
+}
+#articleDatabasePorAPI{
+	
+}
+#articleDatabaseProcessadoras{
+	
+}
+#articleDatabaseSegurança{
+	
+}
+#articleDatabaseTransacionais{
+	
+}

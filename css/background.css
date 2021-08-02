@@ -34,8 +34,8 @@ header{
 #backgroundTopo{
 	position:absolute;
 	top:0px;
-	left:140px;
-	width: 1000px;
+	left:150px;
+	width:1000px;
 	height: 600px;
 	background:url("../imagens/backgroundPreto.png");
 	animation-name:animationBackground;
@@ -48,9 +48,9 @@ header{
 #backgroundTopoDobra{
 	position:absolute;
 	z-index:-10;
+	left:150px;
 	top:10px;
-	left:140px;
-	width: 1000px;
+	width:1000px;
 	height: 600px;
 	opacity:1;
 	background:black;

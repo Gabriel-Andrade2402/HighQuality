@@ -2,11 +2,13 @@ var eventoTexto;
 
 //EVENTOS "CHAMATIVOS"
 function CriandoTextoChamativos(){
+	var article=document.getElementById('articleChamativos');
 	var icone=document.getElementById('iconeChamativo');
 	var div=document.getElementById('blocoTituloChamativo');
 	var span=div.children[0];
 	icone.style.opacity="0";
 	if(eventoTexto==null){
+	article.style.background="linear-gradient(to left top,#e4e4e4,#20B2AA)";
 	eventoTexto=window.setInterval(function(){
 		var arrayTexto=span.innerText.split("");
 		span.style.fontSize ="35pt";
@@ -49,6 +51,7 @@ function CriandoTextoChamativos(){
 
 function cancelarChamativos(){
 	cancelandoTexto();
+	var article=document.getElementById('articleChamativos');
 	var div=document.getElementById('blocoTituloChamativo');
 	var icone=document.getElementById('iconeChamativo');
 	var span=div.children[0];
@@ -56,6 +59,7 @@ function cancelarChamativos(){
 	span.innerText="";
 	span.style.left="30%";
 	span.style.marginTop="0%";
+	article.style.background="linear-gradient(to left top,#e4e4e4,#1E90FF)";
 }
 //-------------FIM EVENTOS "CHAMATIVOS"
 

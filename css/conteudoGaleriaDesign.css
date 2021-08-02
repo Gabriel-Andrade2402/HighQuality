@@ -19,17 +19,24 @@ article:hover{
 	margin-bottom: 70px;
 	border:0.5px solid #00BFFF;
 	box-shadow:-1px -1px 5px #1C1C1C;
+	transition:background 0.5s,border 0.5s;
 }
 #articleChamativos{
 	background:linear-gradient(to left top,#e4e4e4,#1E90FF);
 }
+#articleChamativos:hover{
+	border:0.5px solid black;
+}
 #articleCardapios{
+	transition:background 0.3s;
 	background:linear-gradient(to left top,#1E90FF,#e4e4e4);
 }
 #articleInformativos{
+	transition:background 0.3s;
 	background:linear-gradient(to left bottom,#1E90FF,#e4e4e4);
 }
 #articleLogomarcas{
+	transition:background 0.3s;
 	background:linear-gradient(to left,#1E90FF,#e4e4e4);
 }
 .iconesDesign{
