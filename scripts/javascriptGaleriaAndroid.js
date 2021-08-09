@@ -15,22 +15,22 @@ function AbrirCakesTreats(){
 		botaoDescerConteudo.src="../imagens/iconeDescer.png";
 		botaoDescerConteudo.style.top="15%";
 		blocoPretoDescerSubir.style.height="100%";
-		 textoConteudo.textContent="Cakes Treats são 3 apis interligadas que se comunicam via webService, uma das apis é acessada "+
-		 "apenas pelos clientes, outra api é o webService remoto e por último a api de controle que faz "+
+		 textoConteudo.textContent="Cakes Treats são 3 aplicações interligadas que se comunicam via webService, uma das aplicações é acessada "+
+		 "apenas pelos clientes, outra aplicações é o webService remoto e por último a aplicações de controle que faz "+
 		 "modificações em produtos, valores, nomes, sabores etc... Também tem controle aos pedidos feitos "+
-		 "por data ou por outro filtro. As apis mobiles tem as dependencias de: Volley..."
+		 "por data ou por outro filtro. As aplicações mobiles tem as dependencias de: Volley..."
 	}else{	
 		//Codigos para criar os elementos que estarão presentes na abertura do conteudo
 		botaoDescerConteudo.src="../imagens/iconeSubir.png";
 		botaoDescerConteudo.style.top="150%";
 		blocoPretoDescerSubir.style.height="410%";
-		textoConteudo.textContent="Cakes Treats são 3 apis interligadas que se comunicam via webService, "+
-		 "uma das apis é acessada apenas pelos clientes, outra api é o webService remoto e por último a "+
-		 "api de controle que faz modificações em produtos, valores, nomes, sabores etc... Também tem "+
-		 "controle aos pedidos feitos por data ou por outro filtro. As apis mobiles tem as dependencias "+
+		textoConteudo.textContent="Cakes Treats são 3 aplicações interligadas que se comunicam via webService, "+
+		 "uma das aplicações é acessada apenas pelos clientes, outra aplicações é o webService remoto e por último a "+
+		 "aplicações de controle que faz modificações em produtos, valores, nomes, sabores etc... Também tem "+
+		 "controle aos pedidos feitos por data ou por outro filtro. As aplicações mobiles tem as dependencias "+
 		 "de: Volley, Fragments, Gson, Junit e conexão a rede; A estrutura é baseada nos padrões de "+ 
 		 "projeto: Builder, Singleton e memento. "+
-		 "A api web é um padrão REST no spring boot e tem as dependencias de: JPA, Hibernate, "+
+		 "A aplicações web é um padrão REST no spring boot e tem as dependencias de: JPA, Hibernate, "+
 		 "TomCat; É estruturada no padrão de Entitys,Service,Resources e repositório; o banco "+
 		 "de dados é na linguagem SQL.Os textos foram formatados e validados por expressões regulares REGEX. ";
 		var video=document.createElement('video');

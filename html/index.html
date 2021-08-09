@@ -13,7 +13,7 @@
 		<script src="../scripts/redirects.js"></script>
 		<script type="text/javascript">
 			ScrollManipulation();
-		</script>>
+		</script>
 	</head>
 	<body>
 		<div id="menu"> 
@@ -25,28 +25,34 @@
 		<header>
 			<div id="Blocologomarca">
 				<img src="../imagens/logomarca.png" id="logomarcaBackground"/>
-				<img src="../imagens/logomarcaDobraPreta.png" id="logomarcaBackgroundDobra">
 			</div>
 			<div id="backgroundTopo"></div>
-			<div id="backgroundTopoDobra"></div>
 		</header>
 		<section>
 			<article id="articleDatabase">
-				<span id="tituloArticle1" class="tituloArticle">Databases</span>
-				<span id="conteudoArticle1" class="conteudoArticle">
-					<br/>Bancos de dados são de extrema importancia na vida de todos,
-					<br/>armazenando informações para nós e trazendo as na hora que desejamos.</span>
-				<div id="imagemArticle1" class="imagemArticle">
+				<img src="../imagens/backgroundArticleDatabase.gif" class="imageBackgroundArticleLeft" id="imageBackgroundArticleDatabase"/>
+				<span id="tituloArticle1" class="tituloArticleLeft">Databases</span>
+				<span id="conteudoArticle1" class="conteudoArticleLeft">
+				<br/>Bancos de dados são de extrema
+				<br/>importancia na vida de todos,
+				<br/>armazenando informações para 
+				<br/>nós e trazendo as na hora que
+				<br/>desejamos.</span>
+				<div class="iconeArticleLeft" id="iconeArticle1">
 					<img src="../imagens/imagemDatabaseArticle.png"/>
 				</div>
 			</article>
+
 			<article id="articleDesign">
-				<span id="tituloArticle2" class="tituloArticle2">Design</span>
-				<span id="conteudoArticle2" class="conteudoArticle2">
-					<br/>Os melhores designs, para lojas,barbearias,eventos e outros...
-					<br/>busque sempre o melhor flyer pois é ele quem dará sua primeira impressão</span>
-				<div id="imagemArticle2" class="imagemArticle2">
-					<img src="../imagens/imagemDesignArticle.png"/>
+				<img src="../imagens/backgroundArticleDesign.png" class="imageBackgroundArticleRight" id="imageBackgroundArticleDesign"/>
+				<span id="tituloArticle2" class="tituloArticleRight">Design</span>
+				<span id="conteudoArticle2" class="conteudoArticleRight">
+					<br/>Os melhores designs, para lojas,
+					<br/>barbearias,eventos e outros...
+					<br/>busque sempre o melhor flyer pois
+					<br/>é ele quem dará sua primeira impressão</span>
+				<div id="imagemArticle2" class="iconeArticleRight">
+					<img src="../imagens/imagemDesignArticle.gif"/>
 				</div>
 			</article>
 			<article id="articlePlanilhas">
@@ -80,5 +86,13 @@
 				</div>
 			</article>
 		</section>
+		<script type="text/javascript">
+			var blocoTopo=document.getElementById("backgroundTopo");
+			blocoTopo.style.width="1100px";
+			blocoTopo.style.left="80px";
+			blocoTopo.style.borderRadius="30px";
+			blocoTopo.style.borderTopLeftRadius="0px";
+			blocoTopo.style.borderTopRightRadius="0px";
+		</script>
 	</body>
 </html>

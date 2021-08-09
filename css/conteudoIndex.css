@@ -1,118 +1,93 @@
-
-section{
-	position:absolute;
-	width:1300px;
-	top:670px;
-	left:0px;
+body{
+	padding-top:652px;
+	transition:background 1s;
 }
 article{
+	height:600px;
+	width:100%;
+	margin-bottom:100px;
+}
+article span{
 	position:relative;
-	height:200px;
-	width:1300px;
-}
-article img{
-	width:300px;
-	height:300px;
-}
-.tituloArticle{
-	position: absolute;
-	margin-top:5px;
-	margin-left:40px;
-	color:white;
-	font-size:38pt;
-	font-family:Bodoni MT;
-}
-.conteudoArticle{
-	position: absolute;
-	margin-top:30px;
-	margin-left:40px;
-	color:white;
-	font-size:20pt;
-	font-family:Bodoni MT;
-}
-.tituloArticle2{
-	position: absolute;
-	margin-top:5px;
-	margin-left:900px;
-	color:white;
-	font-size:38pt;
-	font-family:Bodoni MT;
-}
-.conteudoArticle2{
-	position: absolute;
-	margin-top:30px;
-	margin-left:560px;
-	color:white;
-	font-size:20pt;
-	font-family:Bodoni MT;
-}
-.imagemArticle2 img{
-	position: absolute;
-	top:-50px;
-}
-.imagemArticle img{
-	position: absolute;
-	left:900px;
-	top:-50px;
-}
-#articleDatabase{
-	left:-1300px;
-	transition:left 1.6s;
-	background:url("../imagens/backgroundArticleDatabase.png");
-}
-#articleDatabase:hover{
 	z-index:100;
-	-webkit-transform:scale(1.02);
-	cursor: default;
-	transition:-webkit-transform 1s;
+}
+/*Left*/
+.imageBackgroundArticleLeft{
+	width:800px;
+	height:600px;
+	opacity:0.2;
+	transition:opacity 2s;
+}
+.tituloArticleLeft{
+	transition:left 2s,opacity 3s;
+	top:-80%;
+	color:white;
+	font-weight: bold;
+	font-size:40pt;
+	font-family: verdana;
+	left:50%;
+}
+.conteudoArticleLeft{
+	transition:left 2s,opacity 3s;
+	top:-70%;
+	left:110%;
+	color:white;
+	font-family: arial;
+	font-weight:100;
+	font-size:26pt;
+}
+.iconeArticleLeft{
+	transition:left 2s,opacity 3s;
+	position:relative;
+	top:-130%;
+	opacity:0;
+	left:-27%;
+}
+.iconeArticleLeft img{
+	width:400px;
+	height:400px;
+}
 
-}
-#articleDesign{
-	top:30px;
-	left:1300px;
-	transition:left 1.6s;
-	background:url("../imagens/backgroundArticleDesign.png");
-}
-#articleDesign:hover{
-	z-index:100;
-	cursor: default;
-	-webkit-transform:scale(1.02);
-	transition:-webkit-transform 1s;
 
+
+/*Right*/
+
+.imageBackgroundArticleRight{
+	width:900px;
+	height:600px;
+	opacity:0.2;
+	transition:opacity 2s;
+	position:relative;
+	left:29%;
 }
-#articlePlanilhas{
-	top:60px;
-	left:-1300px;
-	transition:left 1.6s;
-	background:url("../imagens/backgroundArticleExcel.png");
+.tituloArticleRight{
+	transition:left 2s,opacity 3s;
+	top:-80%;
+	color:white;
+	font-weight: bold;
+	font-size:40pt;
+	opacity:0.2;
+	font-family: verdana;
+	left:-150%;
 }
-#articlePlanilhas:hover{
-	z-index:100;
-	cursor: default;
-	-webkit-transform:scale(1.02);
-	transition:-webkit-transform 1s;
+.conteudoArticleRight{
+	transition:left 2s,opacity 3s;
+	top:-70%;
+	left:-50%;
+	color:white;
+	opacity:0.2;
+	font-family: arial;
+	font-weight:100;
+	font-size:26pt;
 }
-#articleMobile{
-	top:83px;
-	left:1300px;
-	transition:left 1.6s;
-	background:url("../imagens/backgroundArticleMobile.png");
+.iconeArticleRight{
+	transition:left 2s,opacity 3s;
+	position:relative;
+	top:-125%;
+	left:100%;
+	opacity:0.2;
 }
-#articleMobile:hover{
-	z-index:100;
-	cursor: default;
-	-webkit-transform:scale(1.02);
-	transition:-webkit-transform 1s;
-}
-#articleWeb{
-	top:110px;
-	left:-1300px;
-	transition:left 1.6s;
-	background:url("../imagens/backgroundArticleWeb.png");
-}
-#articleWeb:hover{
-	z-index:100;
-	cursor: default;
-	-webkit-transform:scale(1.02);
-	transition:-webkit-transform 1s;
+.iconeArticleRight img{
+	width:600px;
+	height:600px;
 }
