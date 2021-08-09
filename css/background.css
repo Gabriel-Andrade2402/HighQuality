@@ -1,12 +1,12 @@
 body{
-	padding:0px;
 	overflow-x:hidden;
 	background:#FFFAF0;
 }
 header{
-	position:absolute;
-	top:50px;
+	position:relative;
+	top:35px;
 	left:0px;
+	margin-bottom:38px;
 }
 #Blocologomarca{
 	padding:10px;
@@ -26,16 +26,17 @@ header{
 }
 #backgroundTopo{
 	transition:width 0.5s,left 0.5s,border-radius 1s;
-	position:absolute;
+	position:relative;
 	top:0px;
 	left:280px;
 	width:700px;
-	height: 600px;
+	height: 500px;
 	background:url("../imagens/backgroundPreto.png");
-	animation-name:animationBackground;
+	/*animation-name:animationBackground;
 	animation-duration:50s;
 	animation-direction: alternate;
 	animation-iteration-count:infinite;
+	*/
 	border-radius:100%;
 }
 @keyframes animationBackground{
