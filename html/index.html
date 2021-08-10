@@ -22,11 +22,13 @@
 			<div id="Sobre" class="menu" onclick="redirect('../html/sobre.html')">Sobre</div>
 			<div id="Galeira" class="menu">Galeria</div>
 		</div>
-		<header>
+		<header id="header">
 			<div id="Blocologomarca">
-				<img src="../imagens/logomarca.png" id="logomarcaBackground"/>
+				<img src="../imagens/logomarca.png" id="logomarca"/>
 			</div>
-			<div id="backgroundTopo"></div>
+			<div id="backgroundTopo">
+				<span id="vitrineHeader"></span>
+			</div>
 		</header>
 		<section>
 			<article id="articleDatabase">
@@ -71,34 +73,47 @@
 			</article>
 
 			<article id="articleWeb">
-				<span id="tituloArticle4" class="tituloArticle">Website</span>
-				<span id="conteudoArticle4" class="conteudoArticle">
-					<br/>Websites são muito utilizados para e-commerce,noticiarios e até mesmo
-					<br/>serviços essenciais, hoje em dia toda empresa tem seu website pois a
-					<br/>visibilidade que ele tras junto com informações é essencial.</span>
-				<div id="imagemArticle4" class="imagemArticle">
-					<img src="../imagens/imagemWebArticle.png"/>
+				<img src="../imagens/backgroundArticleMobile.gif" class="imageBackgroundArticleLeft" id="imageBackgroundArticleWeb"/>
+				<span id="tituloArticle4" class="tituloArticleRight">Website</span>
+				<span id="conteudoArticle4" class="conteudoArticleRight">
+					<br/>Websites são muito utilizados para e-commerce,
+					<br/>noticiarios e até mesmo serviços essenciais,hoje
+					<br/> em dia toda empresa tem seu website pois a
+					<br/>visibilidade que ele tras junto com informações
+					<br/>é essencial.</span>
+				<div id="imagemArticle4" class="iconeArticleRight">
+					<img src="../imagens/imagemWebArticle.gif" id="imagemWebArticle"/>
 				</div>
 			</article>
 
 			<article id="articlePlanilhas">
-				<span id="tituloArticle6" class="tituloArticle">Planilhas</span>
-				<span id="conteudoArticle6" class="conteudoArticle">
-					<br/>Planilhas automatizadas e bonitas,para uma melhor visualização de cada
-					<br/>situação.formulários de grandes tecnologias, como e-mail automatizado,
-					<br/>calculos e botões</span>
-				<div id="imagemArticle6" class="imagemArticle">
-					<img src="../imagens/imagemExcelArticle.png"/>
+				<img src="../imagens/backgroundArticleExcel.png" class="imageBackgroundArticleRight" id="imageBackgroundArticlePlanilhas"/>
+				<span id="tituloArticle5" class="tituloArticleLeft">Planilhas</span>
+				<span id="conteudoArticle5" class="conteudoArticleLeft">
+					<br/>Planilhas automatizadas e bonitas,para
+					<br/>uma melhor visualização de cada situação.
+					<br/>formulários de grandes tecnologias, como
+					<br/>e-mail automatizado,calculos e botões</span>
+				<div id="imagemArticle5" class="iconeArticleLeft">
+					<img src="../imagens/imagemExcelArticle.gif"/>
 				</div>
 			</article>
 		</section>
 		<script type="text/javascript">
 			var blocoTopo=document.getElementById("backgroundTopo");
+			var header=document.getElementById("header");
+			var logomarca=document.getElementById("Blocologomarca");
+			var vitrineHeader=document.getElementById("vitrineHeader");
+			header.style.width="100%";
 			blocoTopo.style.width="100%";
 			blocoTopo.style.left="0.2%";
 			blocoTopo.style.borderRadius="30px";
 			blocoTopo.style.borderTopLeftRadius="0px";
 			blocoTopo.style.borderTopRightRadius="0px";
+			setTimeout(function (){
+				logomarca.style.left="60%";
+				vitrineHeaderPalavras();
+			},1000);
 		</script>
 	</body>
 </html>

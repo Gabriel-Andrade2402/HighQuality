@@ -6,31 +6,44 @@ header{
 	position:relative;
 	top:35px;
 	left:0px;
-	margin-bottom:38px;
+	width:700px;
+	height: 500px;
+	margin-bottom:35px;
 }
+/*inicio formatação logomarca*/
 #Blocologomarca{
+	transition:left 2s,width 2s,height 2s;
 	padding:10px;
-	top:-50px;
+	top:0px;
 	z-index:97;
-	left:300px;
-	position:absolute;
-	width:650px;
-	height:650px;
+	left:30%;
+	position:relative;
+	width:450px;
+	height:450px;
 	border-radius:50%;
 }
-#logomarcaBackground{
-	position: absolute;
+#logomarca{
+	position:relative;
 	z-index:99;
 	width:100%;
 	height:100%;
 }
-#backgroundTopo{
-	transition:width 0.5s,left 0.5s,border-radius 1s;
+/*Fim ------------------------------ */
+#vitrineHeader{
 	position:relative;
-	top:0px;
+	top:30%;
+	left:10%;
+	font-family: arial;
+	font-size: 100pt;
+	color: white;
+}
+#backgroundTopo{
+	transition:width 0.5s,left 0.5s,border-radius 1s,opacity 1s;
+	position:relative;
+	top:-470px;
 	left:280px;
-	width:700px;
-	height: 500px;
+	width:100%;
+	height: 100%;
 	background:url("../imagens/backgroundPreto.png");
 	/*animation-name:animationBackground;
 	animation-duration:50s;
