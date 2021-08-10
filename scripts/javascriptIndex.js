@@ -19,7 +19,7 @@ function ScrollManipulation(){
     		backgrounArticle.style.opacity="0.5";
     		document.body.style.background="#00BFFF";
     	}
-    	if(window.scrollY>600){
+    	if(window.scrollY>800){
     		let backgrounArticle=document.getElementById('imageBackgroundArticleDesign');
     		let icone=document.getElementById('imagemArticle2');
     		let tituloArticle=document.getElementById('tituloArticle2');
@@ -33,7 +33,7 @@ function ScrollManipulation(){
     		backgrounArticle.style.opacity="1";
     		document.body.style.background="#DC143C";
     	}
-    	if(window.scrollY>1200){
+    	if(window.scrollY>1400){
     		let backgrounArticle=document.getElementById('imageBackgroundArticleMobile');
     		let icone=document.getElementById('imagemArticle3');
     		let tituloArticle=document.getElementById('tituloArticle3');
@@ -49,7 +49,7 @@ function ScrollManipulation(){
     		backgrounArticle.style.top="-12%";
     		document.body.style.background="#59f240";
     	}
-    	if(window.scrollY>1900){
+    	if(window.scrollY>2100){
     		let backgrounArticle=document.getElementById('imageBackgroundArticleWeb');
     		let icone=document.getElementById('imagemArticle4');
     		let tituloArticle=document.getElementById('tituloArticle4');
@@ -66,7 +66,7 @@ function ScrollManipulation(){
     		backgrounArticle.style.opacity="1";
     		document.body.style.background="#1C1C1C";
     	}
-    	if(window.scrollY>2600){
+    	if(window.scrollY>2800){
     		let backgrounArticle=document.getElementById('imageBackgroundArticlePlanilhas');
     		let icone=document.getElementById('imagemArticle5');
     		let tituloArticle=document.getElementById('tituloArticle5');
@@ -92,12 +92,11 @@ function ScrollManipulation(){
 }
 
 
-function vitrineHeaderPalavras(){
+function vitrineHeaderPalavras(text,span){
 	eventoTexto=window.setInterval(function(){
-			let span=document.getElementById("vitrineHeader");
-			var text="Pessego";
 			var arrayTextPrincipal=text.split("");
 			var arrayTexto=span.innerText.split("");
+			console.log(text);
 			if(arrayTexto.length!=0 && arrayTexto.length!=arrayTextPrincipal.length){
 				span.innerText+=arrayTextPrincipal[arrayTexto.length];
 			}else{
@@ -105,36 +104,36 @@ function vitrineHeaderPalavras(){
 					span.innerText=arrayTextPrincipal[0];
 				}
 			}
+		}, 150);
+	return eventoTexto;
+}
 
-			/*if(arrayTexto.length==0){
-				span.innerText="C";
-			}
-			if(arrayTexto.length==1){
-				span.innerText+="H";
-			}if(arrayTexto.length==2){
-				span.innerText+="A";
-			}
-			if(arrayTexto.length==3){
-				span.innerText+="M";
-			}
-			if(arrayTexto.length==4){
-				span.innerText+="A";
-			}
-			if(arrayTexto.length==5){
-				span.innerText+="T";	
-			}
-			if(arrayTexto.length==6){
-				span.innerText+="I";
-			}
-			if(arrayTexto.length==7){
-				span.innerText+="V";
-			}
-			if(arrayTexto.length==8){
-				span.innerText+="O";
-			}
-			if(arrayTexto.length==9){
-				span.innerText+="S";
-				cancelandoTexto();
-			}*/
-		}, 1000);
+function iniciarVitrineHeader(logomarca,vitrineHeader,blocoTopo){
+	var interval;
+	setTimeout(function (){
+		logomarca.style.left="60%";
+		blocoTopo.style.opacity="0.6";
+		interval=vitrineHeaderPalavras('Aplicativos.',vitrineHeader);
+	},1000);
+	setTimeout(function (){
+		clearInterval(interval);
+		vitrineHeader.innerText='';
+		interval=vitrineHeaderPalavras("Designs.",vitrineHeader);
+	},5000);
+	setTimeout(function (){
+		clearInterval(interval);
+		vitrineHeader.innerText='';
+		interval=vitrineHeaderPalavras("Planilhas.",vitrineHeader);
+	},8000);
+	setTimeout(function (){
+		clearInterval(interval);
+		vitrineHeader.innerText='';
+		interval=vitrineHeaderPalavras("Databases.",vitrineHeader);
+	},11000);
+	setTimeout(function(){
+		clearInterval(interval);
+		vitrineHeader.innerText='';
+		logomarca.style.left="30%";
+		blocoTopo.style.opacity="1";
+	},14000)
 }

@@ -19,7 +19,7 @@
 }
 /*Bloco preto*/
 #menu{
-	background:black;
+	background:#A0522D;
 	z-index:10000;
 	position:fixed;
 	top:0px;

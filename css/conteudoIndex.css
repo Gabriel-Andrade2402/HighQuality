@@ -38,7 +38,7 @@ article span{
 .iconeArticleLeft{
 	transition:left 2s,opacity 3s;
 	position:relative;
-	top:-130%;
+	top:-150%;
 	opacity:0;
 	left:-27%;
 }
