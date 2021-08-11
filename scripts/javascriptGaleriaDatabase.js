@@ -48,10 +48,12 @@ function clickDatabasesBasico(){
 			blockFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				blockFechar.style.cursor="pointer";
 			};
 			blockFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -75,10 +77,12 @@ function clickDatabasesBasico(){
 			imgFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				imgFechar.style.cursor="pointer";
 			};
 			imgFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -149,8 +153,8 @@ function clickDatabasesAutomatizado(){
 			textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
-			textoExplicativo.textContent="Este banco de dados é simples e possui apenas uma tabela"+
-			" com os informações";
+			textoExplicativo.textContent="Este banco de dados é manuseado através de funções e procedimentos"+
+			" ja definidos para recuperar melhores resultados.";
 			textoExplicativo.classList.add('textoExplicativo');
 			//Fim -------------------------------------------
 			//Formatar video  ===============================
@@ -164,10 +168,12 @@ function clickDatabasesAutomatizado(){
 			blockFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				blockFechar.style.cursor="pointer";
 			};
 			blockFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -191,10 +197,12 @@ function clickDatabasesAutomatizado(){
 			imgFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				imgFechar.style.cursor="pointer";
 			};
 			imgFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -265,8 +273,8 @@ function clickDatabasesPorAPI(){
 			textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
-			textoExplicativo.textContent="Este banco de dados é simples e possui apenas uma tabela"+
-			" com os informações";
+			textoExplicativo.textContent="Esta é uma aplicação que simula um RH, os dados são "+
+			"mais atrativos e dinâmicos podendo executar alterações";
 			textoExplicativo.classList.add('textoExplicativo');
 			//Fim -------------------------------------------
 			//Formatar video  ===============================
@@ -280,10 +288,12 @@ function clickDatabasesPorAPI(){
 			blockFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				blockFechar.style.cursor="pointer";
 			};
 			blockFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -307,10 +317,12 @@ function clickDatabasesPorAPI(){
 			imgFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				imgFechar.style.cursor="pointer";
 			};
 			imgFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -381,8 +393,8 @@ function clickDatabasesProcessadoras(){
 			textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
-			textoExplicativo.textContent="Este banco de dados é simples e possui apenas uma tabela"+
-			" com os informações";
+			textoExplicativo.textContent="Neste banco é utilizado os famosos procedimentos para "+
+			"executar operações pré-definidas.";
 			textoExplicativo.classList.add('textoExplicativo');
 			//Fim -------------------------------------------
 			//Formatar video  ===============================
@@ -396,10 +408,12 @@ function clickDatabasesProcessadoras(){
 			blockFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				blockFechar.style.cursor="pointer";
 			};
 			blockFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -423,10 +437,12 @@ function clickDatabasesProcessadoras(){
 			imgFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				imgFechar.style.cursor="pointer";
 			};
 			imgFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -497,8 +513,8 @@ function clickDatabasesSegurança(){
 			textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
-			textoExplicativo.textContent="Este banco de dados é simples e possui apenas uma tabela"+
-			" com os informações";
+			textoExplicativo.textContent="O database possui usuarios onde suas operações são "+
+			"controladas e limitadas.";
 			textoExplicativo.classList.add('textoExplicativo');
 			//Fim -------------------------------------------
 			//Formatar video  ===============================
@@ -512,10 +528,12 @@ function clickDatabasesSegurança(){
 			blockFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				blockFechar.style.cursor="pointer";
 			};
 			blockFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -539,10 +557,12 @@ function clickDatabasesSegurança(){
 			imgFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				imgFechar.style.cursor="pointer";
 			};
 			imgFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -613,8 +633,8 @@ function clickDatabasesTransacionais(){
 			textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
-			textoExplicativo.textContent="Este banco de dados é simples e possui apenas uma tabela"+
-			" com os informações";
+			textoExplicativo.textContent="As operações estão em transação, trazendo a"+
+			" garantia de que é possível recuperar ou confirmar as alterações";
 			textoExplicativo.classList.add('textoExplicativo');
 			//Fim -------------------------------------------
 			//Formatar video  ===============================
@@ -628,10 +648,12 @@ function clickDatabasesTransacionais(){
 			blockFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				blockFechar.style.cursor="pointer";
 			};
 			blockFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -655,10 +677,12 @@ function clickDatabasesTransacionais(){
 			imgFechar.onmouseover=function(){
 				blockFechar.style.opacity="0.7";
 				imgFechar.style.opacity="0.7";
+				imgFechar.style.cursor="pointer";
 			};
 			imgFechar.onmouseleave=function(){
 				blockFechar.style.opacity="0.2";
 				imgFechar.style.opacity="0.2";
+				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
 				article.removeChild(textDownload);
@@ -732,11 +756,13 @@ function iniciarManipulacaoSlide(blocoMain,imagem,rotaBase,maxValue){
 		iconePassar.style.opacity="0.8";
 		iconeVoltar.style.opacity="0.4";
 		blocoPreto.style.opacity="0.1";
+		iconePassar.style.cursor="pointer";
 	}
 	iconePassar.onmouseleave=function(){
 		iconeVoltar.style.opacity="0";
 		iconePassar.style.opacity="0";
 		blocoPreto.style.opacity="0";
+		iconePassar.style.cursor="default";
 	}
 	iconePassar.addEventListener('click',function(){passarFoto(imagem,rotaBase,maxValue)});
 	iconeVoltar.style.width="70px";
@@ -750,11 +776,13 @@ function iniciarManipulacaoSlide(blocoMain,imagem,rotaBase,maxValue){
 		iconeVoltar.style.opacity="0.8";
 		iconePassar.style.opacity="0.4";
 		blocoPreto.style.opacity="0.1";
+		iconeVoltar.style.cursor="pointer";
 	}
 	iconeVoltar.onmouseleave=function(){
 		iconeVoltar.style.opacity="0";
 		iconePassar.style.opacity="0";
 		blocoPreto.style.opacity="0";
+		iconeVoltar.style.cursor="default";
 	}
 	iconeVoltar.addEventListener('click',function(){voltarFoto(imagem,rotaBase)});
 	blocoMain.appendChild(blocoPreto);
