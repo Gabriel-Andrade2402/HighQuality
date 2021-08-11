@@ -1,10 +1,10 @@
 body{
-	padding-top:100px;
+	padding-top:80px;
 	padding-left:50px;
 }
 .articleDatabases{
 	display:inline-block;
-	width:500px;
+	width:60%;
 	height:60px;
 	margin-left:13%;
 	margin-bottom:2%;
@@ -16,15 +16,25 @@ body{
 	font-weight:bold;
 	color:white;
 	padding-top:30px;
-	padding-left:200px;
 	font-size:24pt;
-	transition:background 0.3s,color 0.3s,text-shadow 0.3s,width 0.6s,heigth 0.6s;
+	transition:background 0.3s,color 0.3s,text-shadow 0.3s,width 0.6s,heigth 0.6s,margin-left 0.6s,left 0.6s;
 }
 .articleDatabases:hover{
 	background: #20B2AA;
 	color:#1C1C1C;
 	text-shadow: 1px 1px 1px black;
 	cursor:pointer;
+}
+.articleDatabaseOpen{
+	display:inline-block;
+	margin-left:13%;
+	margin-bottom:2%;
+	background:#00BFFF;
+	border:1px solid #696969;
+	border-radius:10px;
+	padding-top:30px;
+	padding-left:50px;
+	transition:padding-left 0.5s;
 }
 #articleDatabaseSimples{
 	
@@ -43,4 +53,87 @@ body{
 }
 #articleDatabaseTransacionais{
 	
+}
+
+
+
+
+
+/*Classes usadas na abertura dos objetos database*/
+.inicioTitulo{
+	font-size:10pt;
+	margin-left:0%;
+	font-weight:bold;
+}
+.fimTitulo{
+	color: white;
+	font-family:arial;
+	text-shadow:1px 1px 4px black;
+	font-size:24pt;
+	font-weight: bold;
+}
+.iconeBaixar{
+    width:50px;
+	height:50px;
+}
+.textDownload{
+	position: relative;
+	text-decoration-color:black;
+	text-decoration-line:none;
+	left: 80%;
+	color: black;
+	font-size:20pt;
+	top:-6%;
+}
+.textoExplicativo{
+	color:#1C1C1C;
+	position:relative;
+	left: -5%;
+	font-family:verdana;
+	font-size: 12pt;
+}
+.video{
+	position:relative;
+	width: 500px;
+	height: 300px;
+	display:inline-block;
+	top:10%;
+	left: -4%;
+	border-radius: 20px;
+			
+}
+.blockFechar{
+	width:10%;
+	height: 106.5%;
+	border-bottom-right-radius:10px;
+	border-top-right-radius:10px;
+	background: black;
+	position:relative;
+	opacity:0.2;
+	transition:opacity 0.6s;
+	top:-93.5%;
+	left:90%;
+}
+.imgFechar{
+	width:80px;
+	height:80px;
+	position:relative;
+	opacity: 0.2;
+	top: -156%;
+	left:91%;
+	transition:opacity 0.6s;
+}
+.blockImagens{
+	width: 500px;
+	height:300px;
+	position:relative;
+	top: -181.5%;
+	left:43.7%;
+	border-radius:20px;
+}
+.imagens{
+	width:500px;
+	height: 300px;
+	position: relative;
+	border-radius:20px;
 }
