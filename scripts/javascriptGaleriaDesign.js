@@ -66,8 +66,8 @@ function cancelarChamativos(){
 	span.innerText="";
 	span.style.left="30%";
 	span.style.marginTop="0%";
-	article.style.background="linear-gradient(to left top,#e4e4e4,#1E90FF)";
-	article.style.border="0.5px solid #00BFFF";
+	article.style.background="linear-gradient(to left top,#e4e4e4,#dc3434)";
+	article.style.border="0.5px solid #dc3434";
 }
 //-------------FIM EVENTOS "CHAMATIVOS"
 
@@ -131,8 +131,8 @@ function cancelarCardapios(){
 	span.innerText="";
 	span.style.left="30%";
 	span.style.marginTop="0%";
-	article.style.background="linear-gradient(to left top,#1E90FF,#e4e4e4)";
-	article.style.border="0.5px solid #00BFFF";
+	article.style.background="linear-gradient(to left top,#dc3434,#e4e4e4)";
+	article.style.border="0.5px solid #dc3434";
 }
 //-------------FIM EVENTOS "CARDAPIOS"
 
@@ -203,8 +203,8 @@ function cancelarInformativos(){
 	span.innerText="";
 	span.style.left="30%";
 	span.style.marginTop="0%";
-	article.style.background="linear-gradient(to left bottom,#1E90FF,#e4e4e4)";
-	article.style.border="0.5px solid #00BFFF";
+	article.style.background="linear-gradient(to left bottom,#dc3434,#e4e4e4)";
+	article.style.border="0.5px solid #dc3434";
 }
 //-------------FIM EVENTOS "INFORMATIVOS"
 
@@ -269,8 +269,8 @@ function cancelarLogomarcas(){
 	span.innerText="";
 	span.style.left="30%";
 	span.style.marginTop="0%";
-	article.style.background="linear-gradient(to left,#1E90FF,#e4e4e4)";
-	article.style.border="0.5px solid #00BFFF";
+	article.style.background="linear-gradient(to left,#dc3434,#e4e4e4)";
+	article.style.border="0.5px solid #dc3434";
 }
 //-------------FIM EVENTOS "LOGOMARCAS"
 

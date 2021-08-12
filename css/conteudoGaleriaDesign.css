@@ -17,21 +17,21 @@ article:hover{
 	display: inline-block;
 	margin-left:120px;
 	margin-bottom: 70px;
-	border:0.5px solid #00BFFF;
+	border:0.5px solid #dc3434;
 	box-shadow:-1px -1px 5px #1C1C1C;
 	transition:background 0.5s,border 0.5s;
 }
 #articleChamativos{
-	background:linear-gradient(to left top,#e4e4e4,#1E90FF);
+	background:linear-gradient(to left top,#e4e4e4,#dc3434);
 }
 #articleCardapios{
-	background:linear-gradient(to left top,#1E90FF,#e4e4e4);
+	background:linear-gradient(to left top,#dc3434,#e4e4e4);
 }
 #articleInformativos{
-	background:linear-gradient(to left bottom,#1E90FF,#e4e4e4);
+	background:linear-gradient(to left bottom,#dc3434,#e4e4e4);
 }
 #articleLogomarcas{
-	background:linear-gradient(to left,#1E90FF,#e4e4e4);
+	background:linear-gradient(to left,#dc3434,#e4e4e4);
 }
 .iconesDesign{
 	display:block;

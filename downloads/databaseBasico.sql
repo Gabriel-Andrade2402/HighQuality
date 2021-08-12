@@ -1,0 +1,1 @@
+SELECT * FROM Pessoa AS p LEFT JOIN Carro AS c ON p.CPF=c.CPF;

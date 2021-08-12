@@ -2,7 +2,7 @@
 function clickDatabasesBasico(){
 	let article=document.getElementById('articleDatabaseSimples');
 	article.onclick=null;
-	let textDownload=document.createElement('a');
+	//let textDownload=document.createElement('a');
 	let textoExplicativo=document.createElement('span');
 	let video=document.createElement('video');
 	let imagens=document.createElement('img');
@@ -24,13 +24,14 @@ function clickDatabasesBasico(){
 			fimTitulo.classList.add('fimTitulo');
 			//Fim -------------------------------------------
 			//Formatar texto Download =======================
-			let iconeBaixar=document.createElement('img');
-			iconeBaixar.src="../imagens/iconeBaixar.png";
-			iconeBaixar.classList.add('iconeBaixar');
-			textDownload.classList.add('textDownload');
-			textDownload.href="https://www.facebook.com"
-			textDownload.target="blank";
-			textDownload.appendChild(iconeBaixar);
+				// let iconeBaixar=document.createElement('img');
+				// iconeBaixar.src="../imagens/iconeBaixar.png";
+				// iconeBaixar.classList.add('iconeBaixar');
+				// textDownload.classList.add('textDownload');
+				// textDownload.href="../downloads/databaseBasico.sql"
+				// textDownload.download="databaseSimples";
+				// textDownload.target="none";
+				// textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
 			textoExplicativo.textContent="Este banco de dados é simples e possui apenas uma tabela"+
@@ -56,7 +57,7 @@ function clickDatabasesBasico(){
 				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -85,7 +86,7 @@ function clickDatabasesBasico(){
 				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -110,7 +111,7 @@ function clickDatabasesBasico(){
 			blockImagens.appendChild(imagens);
 			iniciarManipulacaoSlide(blockImagens,imagens,'basico',3);
 			//Fim -------------------------------------------
-			article.appendChild(textDownload);
+			//article.appendChild(textDownload);
 			article.appendChild(textoExplicativo);
 			article.appendChild(video);
 			article.appendChild(blockFechar);
@@ -122,7 +123,7 @@ function clickDatabasesBasico(){
 function clickDatabasesAutomatizado(){
 	let article=document.getElementById('articleDatabaseAutomatizado');
 	article.onclick=null;
-	let textDownload=document.createElement('a');
+	//let textDownload=document.createElement('a');
 	let textoExplicativo=document.createElement('span');
 	let video=document.createElement('video');
 	let imagens=document.createElement('img');
@@ -144,13 +145,13 @@ function clickDatabasesAutomatizado(){
 			fimTitulo.classList.add('fimTitulo');
 			//Fim -------------------------------------------
 			//Formatar texto Download =======================
-			let iconeBaixar=document.createElement('img');
-			iconeBaixar.src="../imagens/iconeBaixar.png";
-			iconeBaixar.classList.add('iconeBaixar');
-			textDownload.classList.add('textDownload');
-			textDownload.href="https://www.facebook.com"
-			textDownload.target="blank";
-			textDownload.appendChild(iconeBaixar);
+				// let iconeBaixar=document.createElement('img');
+				// iconeBaixar.src="../imagens/iconeBaixar.png";
+				// iconeBaixar.classList.add('iconeBaixar');
+				// textDownload.classList.add('textDownload');
+				// textDownload.href="https://www.facebook.com"
+				// textDownload.target="blank";
+				// textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
 			textoExplicativo.textContent="Este banco de dados é manuseado através de funções e procedimentos"+
@@ -176,7 +177,7 @@ function clickDatabasesAutomatizado(){
 				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -205,7 +206,7 @@ function clickDatabasesAutomatizado(){
 				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -230,7 +231,7 @@ function clickDatabasesAutomatizado(){
 			blockImagens.appendChild(imagens);
 			iniciarManipulacaoSlide(blockImagens,imagens,'funcao',5);
 			//Fim -------------------------------------------
-			article.appendChild(textDownload);
+			//article.appendChild(textDownload);
 			article.appendChild(textoExplicativo);
 			article.appendChild(video);
 			article.appendChild(blockFechar);
@@ -242,7 +243,7 @@ function clickDatabasesAutomatizado(){
 function clickDatabasesPorAPI(){
 	let article=document.getElementById('articleDatabasePorAPI');
 	article.onclick=null;
-	let textDownload=document.createElement('a');
+	//let textDownload=document.createElement('a');
 	let textoExplicativo=document.createElement('span');
 	let video=document.createElement('video');
 	let imagens=document.createElement('img');
@@ -264,13 +265,13 @@ function clickDatabasesPorAPI(){
 			fimTitulo.classList.add('fimTitulo');
 			//Fim -------------------------------------------
 			//Formatar texto Download =======================
-			let iconeBaixar=document.createElement('img');
-			iconeBaixar.src="../imagens/iconeBaixar.png";
-			iconeBaixar.classList.add('iconeBaixar');
-			textDownload.classList.add('textDownload');
-			textDownload.href="https://www.facebook.com"
-			textDownload.target="blank";
-			textDownload.appendChild(iconeBaixar);
+				// let iconeBaixar=document.createElement('img');
+				// iconeBaixar.src="../imagens/iconeBaixar.png";
+				// iconeBaixar.classList.add('iconeBaixar');
+				// textDownload.classList.add('textDownload');
+				// textDownload.href="https://www.facebook.com"
+				// textDownload.target="blank";
+				// textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
 			textoExplicativo.textContent="Esta é uma aplicação que simula um RH, os dados são "+
@@ -296,7 +297,7 @@ function clickDatabasesPorAPI(){
 				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -325,7 +326,7 @@ function clickDatabasesPorAPI(){
 				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -350,7 +351,7 @@ function clickDatabasesPorAPI(){
 			blockImagens.appendChild(imagens);
 			iniciarManipulacaoSlide(blockImagens,imagens,'porApi',14);
 			//Fim -------------------------------------------
-			article.appendChild(textDownload);
+			//article.appendChild(textDownload);
 			article.appendChild(textoExplicativo);
 			article.appendChild(video);
 			article.appendChild(blockFechar);
@@ -362,7 +363,7 @@ function clickDatabasesPorAPI(){
 function clickDatabasesProcessadoras(){
 	let article=document.getElementById('articleDatabaseProcessadoras');
 	article.onclick=null;
-	let textDownload=document.createElement('a');
+	//let textDownload=document.createElement('a');
 	let textoExplicativo=document.createElement('span');
 	let video=document.createElement('video');
 	let imagens=document.createElement('img');
@@ -384,13 +385,13 @@ function clickDatabasesProcessadoras(){
 			fimTitulo.classList.add('fimTitulo');
 			//Fim -------------------------------------------
 			//Formatar texto Download =======================
-			let iconeBaixar=document.createElement('img');
-			iconeBaixar.src="../imagens/iconeBaixar.png";
-			iconeBaixar.classList.add('iconeBaixar');
-			textDownload.classList.add('textDownload');
-			textDownload.href="https://www.facebook.com"
-			textDownload.target="blank";
-			textDownload.appendChild(iconeBaixar);
+				// let iconeBaixar=document.createElement('img');
+				// iconeBaixar.src="../imagens/iconeBaixar.png";
+				// iconeBaixar.classList.add('iconeBaixar');
+				// textDownload.classList.add('textDownload');
+				// textDownload.href="https://www.facebook.com"
+				// textDownload.target="blank";
+				// textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
 			textoExplicativo.textContent="Neste banco é utilizado os famosos procedimentos para "+
@@ -416,7 +417,7 @@ function clickDatabasesProcessadoras(){
 				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -445,7 +446,7 @@ function clickDatabasesProcessadoras(){
 				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -470,7 +471,7 @@ function clickDatabasesProcessadoras(){
 			blockImagens.appendChild(imagens);
 			iniciarManipulacaoSlide(blockImagens,imagens,'procedimento',3);
 			//Fim -------------------------------------------
-			article.appendChild(textDownload);
+			//article.appendChild(textDownload);
 			article.appendChild(textoExplicativo);
 			article.appendChild(video);
 			article.appendChild(blockFechar);
@@ -482,7 +483,7 @@ function clickDatabasesProcessadoras(){
 function clickDatabasesSegurança(){
 	let article=document.getElementById('articleDatabaseSegurança');
 	article.onclick=null;
-	let textDownload=document.createElement('a');
+	//let textDownload=document.createElement('a');
 	let textoExplicativo=document.createElement('span');
 	let video=document.createElement('video');
 	let imagens=document.createElement('img');
@@ -504,13 +505,13 @@ function clickDatabasesSegurança(){
 			fimTitulo.classList.add('fimTitulo');
 			//Fim -------------------------------------------
 			//Formatar texto Download =======================
-			let iconeBaixar=document.createElement('img');
-			iconeBaixar.src="../imagens/iconeBaixar.png";
-			iconeBaixar.classList.add('iconeBaixar');
-			textDownload.classList.add('textDownload');
-			textDownload.href="https://www.facebook.com"
-			textDownload.target="blank";
-			textDownload.appendChild(iconeBaixar);
+				// let iconeBaixar=document.createElement('img');
+				// iconeBaixar.src="../imagens/iconeBaixar.png";
+				// iconeBaixar.classList.add('iconeBaixar');
+				// textDownload.classList.add('textDownload');
+				// textDownload.href="https://www.facebook.com"
+				// textDownload.target="blank";
+				// textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
 			textoExplicativo.textContent="O database possui usuarios onde suas operações são "+
@@ -536,7 +537,7 @@ function clickDatabasesSegurança(){
 				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -565,7 +566,7 @@ function clickDatabasesSegurança(){
 				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -590,7 +591,7 @@ function clickDatabasesSegurança(){
 			blockImagens.appendChild(imagens);
 			iniciarManipulacaoSlide(blockImagens,imagens,'seguranca',5);
 			//Fim -------------------------------------------
-			article.appendChild(textDownload);
+			//article.appendChild(textDownload);
 			article.appendChild(textoExplicativo);
 			article.appendChild(video);
 			article.appendChild(blockFechar);
@@ -602,7 +603,7 @@ function clickDatabasesSegurança(){
 function clickDatabasesTransacionais(){
 	let article=document.getElementById('articleDatabaseTransacionais');
 	article.onclick=null;
-	let textDownload=document.createElement('a');
+	//let textDownload=document.createElement('a');
 	let textoExplicativo=document.createElement('span');
 	let video=document.createElement('video');
 	let imagens=document.createElement('img');
@@ -624,13 +625,13 @@ function clickDatabasesTransacionais(){
 			fimTitulo.classList.add('fimTitulo');
 			//Fim -------------------------------------------
 			//Formatar texto Download =======================
-			let iconeBaixar=document.createElement('img');
-			iconeBaixar.src="../imagens/iconeBaixar.png";
-			iconeBaixar.classList.add('iconeBaixar');
-			textDownload.classList.add('textDownload');
-			textDownload.href="https://www.facebook.com"
-			textDownload.target="blank";
-			textDownload.appendChild(iconeBaixar);
+				// let iconeBaixar=document.createElement('img');
+				// iconeBaixar.src="../imagens/iconeBaixar.png";
+				// iconeBaixar.classList.add('iconeBaixar');
+				// textDownload.classList.add('textDownload');
+				// textDownload.href="https://www.facebook.com"
+				// textDownload.target="blank";
+				// textDownload.appendChild(iconeBaixar);
 			//Fim -------------------------------------------
 			//Formatar texto conteudo =======================
 			textoExplicativo.textContent="As operações estão em transação, trazendo a"+
@@ -656,7 +657,7 @@ function clickDatabasesTransacionais(){
 				blockFechar.style.cursor="default";
 			};
 			blockFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -685,7 +686,7 @@ function clickDatabasesTransacionais(){
 				imgFechar.style.cursor="default";
 			};
 			imgFechar.onclick=function(){
-				article.removeChild(textDownload);
+				//article.removeChild(textDownload);
 				article.removeChild(textoExplicativo);
 				article.removeChild(video);
 				article.removeChild(blockImagens);
@@ -710,7 +711,7 @@ function clickDatabasesTransacionais(){
 			blockImagens.appendChild(imagens);
 			iniciarManipulacaoSlide(blockImagens,imagens,'transacionais',5);
 			//Fim -------------------------------------------
-			article.appendChild(textDownload);
+			//article.appendChild(textDownload);
 			article.appendChild(textoExplicativo);
 			article.appendChild(video);
 			article.appendChild(blockFechar);
